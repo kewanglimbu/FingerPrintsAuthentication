@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FingerPrintsAuthentication.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoginPage"
+    BackgroundColor="WhiteSmoke"
+    Shell.NavBarIsVisible="False">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <ScrollView>
+            <VerticalStackLayout Margin="15" Padding="25,0,25,0">
+
+                <Label
+                    Padding="0,35,0,0"
+                    FontAttributes="Bold"
+                    FontFamily="monospace"
+                    FontSize="23"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Padding="0,25,0,0"
+                    FontSize="13"
+                    Text="Email"
+                    TextColor="DarkBlue" />
+
+                <Entry
+                    Keyboard="Email"
+                    Placeholder="Enter your email"
+                    Text="{Binding Email}" />
+
+                <Label
+                    FontSize="13"
+                    Text="Password"
+                    TextColor="DarkBlue" />
+
+                <Entry
+                    IsPassword="True"
+                    Placeholder="Enter your password"
+                    Text="{Binding Password}" />
+                <Label
+                    Padding="0,6,0,0"
+                    FontSize="13"
+                    Text="Forget Password?"
+                    TextColor="DarkBlue" />
+
+                <Button
+                    Margin="0,25,0,0"
+                    Background="LightCoral"
+                    Command="{Binding LoginCommand}"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    Text="Login"
+                    TextColor="White" />
+
+                <StackLayout Padding="15">
+                    <Label
+                        Padding="8"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        HorizontalOptions="Center"
+                        Text="or use fingerprint"
+                        VerticalOptions="Center" />
+
+                    <ImageButton
+                        BorderColor="Black "
+                        BorderWidth="1"
+                        Command="{Binding LoginWithBiometricClickedCommand}"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        Source="fingerprint_icon.png"
+                        VerticalOptions="Center"
+                        WidthRequest="60" />
+                </StackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
