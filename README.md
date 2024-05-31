@@ -13,11 +13,11 @@ FingerPrintsAuthentication is a .NET MAUI Demo application demonstrating how to 
 - MVVM Architecture
 
 ## Screenshots
-![LoginPage](/Screenshots/Screenshot-1.jpg) 
-
-![Fingerprint Scan](/Screenshots/Screenshot-2.jpg) 
-
-![After Successfully Authenticate Page](/Screenshots/Screenshot-3.jpg) 
+<p align="justify">
+  <img src="/Screenshots/Screenshot-1.jpg" width="256" height="455" >
+  <img src="/Screenshots/Screenshot-2.jpg" width="256" height="455" >
+  <img src="/Screenshots/Screenshot-3.jpg" width="256" height="455" >
+</p>
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this demo application.
